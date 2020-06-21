@@ -7,7 +7,9 @@
     </header>
     <div class="card-content">
       <div class="content has-text-centered">
-        <img :src="icon_uri" :style="{ width: 100 }">
+        <b-tooltip :label="catch_phrase" always>
+          <img :src="icon_uri" :style="{ width: 100 }">
+        </b-tooltip>
       </div>
     </div>
     <footer class="card-footer">
@@ -26,6 +28,9 @@ export default {
       required: true
     },
     icon_uri: {
+      type: String
+    },
+    catch_phrase: {
       type: String
     }
   }

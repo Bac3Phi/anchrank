@@ -16,7 +16,7 @@
         v-bind:key="villager.id"
         class="column"
       >
-        <card :title="villager.name['name-USen']" :icon_uri="villager.icon_uri">
+        <card :title="villager.name" :icon_uri="villager.icon_uri" :catch_phrase="villager.catch_phrase">
           <div class="w-100">
             <p>
               <strong>Gender: </strong><span>{{ villager.gender }}</span>
@@ -64,9 +64,7 @@ export default {
     filteredList() {
       return Object.values(this.villagers).filter(villager => {
         return (
-          villager.name["name-USen"]
-            .toLowerCase()
-            .includes(this.search.toLowerCase()) ||
+          villager.name.toLowerCase().includes(this.search.toLowerCase()) ||
           villager.personality.toLowerCase().includes(this.search.toLowerCase())
         );
       });

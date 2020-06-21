@@ -13,7 +13,8 @@
     "node-sass": "^4.14.1",
     "nuxt": "^2.13.0",
     "nuxt-buefy": "^0.3.31",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-select": "^3.10.3"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3"

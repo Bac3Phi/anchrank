@@ -20,14 +20,14 @@
 
       <template slot="end">
         <b-navbar-item tag="div">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
+            <nuxt-link to="capuchino" class="button is-primary">
+              <b-icon icon="coffee-to-go"/>
+              <strong>Submit a Capuchino</strong>
+            </nuxt-link>
+            <!-- <a class="button is-light">
               Log in
-            </a>
-          </div>
+            </a> -->
+
         </b-navbar-item>
       </template>
     </b-navbar>
