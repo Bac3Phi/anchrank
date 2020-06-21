@@ -46,15 +46,20 @@ export default {
     return {
       items: [
         {
-          title: "Home",
-          icon: "home",
+          title: "Rank",
+          icon: "crown-outline",
           to: { name: "index" }
+        },
+        {
+          title: "Vilagers",
+          icon: "home-variant-outline",
+          to: { name: "vilagers" }
         },
         {
           title: "Chill",
           icon: "coffee",
           to: { name: "chill" }
-        }
+        },
       ]
     };
   }
