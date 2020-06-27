@@ -4,6 +4,9 @@
       <p class="card-header-title has-text-grey">
         {{ title }}
       </p>
+      <div class="rank_tiny">
+        <img :src="rank_url(rank)" width="100" height="60">
+      </div>
     </header>
     <div class="card-content">
       <div class="content has-text-centered" >
@@ -63,6 +66,9 @@ export default {
     },
     voted: {
       type: Number
+    },
+    rank: {
+      type: String
     }
   },
   data(){
@@ -90,6 +96,10 @@ export default {
         this.$buefy.snackbar.open(`You have used up 20 votes, please come back in 30 minutes`)
       }
     },
+    rank_url: (rank) => {
+      var images = require.context('../assets/rank', false, /\.png$/)
+      return images('./' + rank.toUpperCase() + ".png")
+    }
   }
 };
 </script>

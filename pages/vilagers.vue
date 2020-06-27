@@ -26,6 +26,7 @@
           :catch_phrase="villager.catch_phrase"
           :image_uri="villager.image_uri"
           :voted="villager.voted"
+          :rank="villager.rank"
         >
           <div class="w-100">
             <p>

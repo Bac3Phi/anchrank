@@ -21,7 +21,7 @@
           {{ props.row.voted }}
         </b-table-column>
         <b-table-column field="rank" label="Rank" sortable searchable>
-          {{ props.row.rank }}
+          <img :src="rank_url(props.row.rank)" :alt="props.row.rank"/>
         </b-table-column>
         <b-table-column label="Gender">
           {{ props.row.gender }}
@@ -101,7 +101,12 @@ export default {
         this.data = response.data;
       });
   },
-  computed: {}
+  methods: {
+    rank_url: (rank) => {
+      var images = require.context('../assets/rank', false, /\.png$/)
+      return images('./' + rank.toUpperCase() + ".png")
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -114,7 +119,6 @@ export default {
 .type-ssr {
   font-size: 30px;
   background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 </style>
