@@ -10,8 +10,8 @@
         </b-navbar-item>
       </template>
       <template slot="start">
-        <b-navbar-item v-for="(item, key) of items" :key="key">
-          <nuxt-link :to="item.to" exact-active-class="is-active">
+        <b-navbar-item v-for="(item, key) of items" :key="key" exact-active-class="is-active">
+          <nuxt-link :to="item.to" >
             <b-icon :icon="item.icon" /> {{ item.title }}
           </nuxt-link>
         </b-navbar-item>
@@ -22,7 +22,7 @@
         <b-navbar-item tag="div">
             <nuxt-link to="capuchino" class="button is-primary">
               <b-icon icon="coffee-to-go"/>
-              <strong>Request to update Rank</strong>
+              <strong>Take a capuchino</strong>
             </nuxt-link>
             <!-- <a class="button is-light">
               Log in
@@ -46,12 +46,12 @@ export default {
     return {
       items: [
         {
-          title: "Rank",
+          title: "Rank List",
           icon: "crown-outline",
           to: { name: "index" }
         },
         {
-          title: "Vilagers",
+          title: "Vote Vilagers",
           icon: "home-variant-outline",
           to: { name: "vilagers" }
         },
@@ -66,3 +66,6 @@ export default {
 };
 </script>
 
+<style lang="scss">
+
+</style>

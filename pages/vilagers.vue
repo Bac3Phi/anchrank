@@ -2,7 +2,7 @@
   <section class="section">
     <b-field>
       <b-input
-        placeholder="Search..."
+        placeholder="Search by name or personality"
         type="search"
         icon="magnify"
         icon-clickable
