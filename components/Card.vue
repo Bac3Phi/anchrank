@@ -75,7 +75,7 @@ export default {
   methods: {
     vote(voted_type){
       let voted_count = Number($cookies.get('voted_count'))
-      if(voted_count < 20){
+      if(voted_count < 100){
         $cookies.set('voted_count', voted_count += 1, "30min");
         this.score += voted_type === 'up' ? +1 : -1;
 
