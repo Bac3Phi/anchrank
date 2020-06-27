@@ -22,7 +22,7 @@
         <b-navbar-item tag="div">
             <nuxt-link to="capuchino" class="button is-primary">
               <b-icon icon="coffee-to-go"/>
-              <strong>Submit a Capuchino</strong>
+              <strong>Request to update Rank</strong>
             </nuxt-link>
             <!-- <a class="button is-light">
               Log in

@@ -1,36 +1,7 @@
 <template>
   <section class="section">
-    <div class="capu-form-input">
-      <strong>1st</strong>
-      <v-select :options="options">
-        <template v-slot:option="option">
-          <img :src="option.icon_uri" />
-          {{ option.name }}
-        </template>
-      </v-select>
-    </div>
-    <div class="capu-form-input">
-      <strong>2nd</strong>
-      <v-select :options="options">
-        <template v-slot:option="option">
-          <img :src="option.icon_uri" />
-          {{ option.name }}
-        </template>
-      </v-select>
-    </div>
-    <div class="capu-form-input">
-      <strong>3rd</strong>
-      <v-select :options="options">
-        <template v-slot:option="option">
-          <img :src="option.icon_uri" />
-          {{ option.name }}
-        </template>
-      </v-select>
-    </div>
-    <div class="buttons dudua-group">
-      <b-button type="is-primary" expanded size="is-large"><b-icon icon="coffee-maker"/><strong>Take your Capuchino</strong></b-button>
+    <h1 class="title is-3 has-text-primary">Comming Soon...</h1>
     <img src="~assets/dudua.png">
-    </div>
   </section>
 </template>
 
